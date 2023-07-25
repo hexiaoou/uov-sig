@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* 自定义样式 */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    td:first-child {
+      font-weight: bold;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <!-- 表格布局 -->
+  <table>
+    <tr>
+      <th rowspan="2" colspan="2">Instance</th>
+      <th colspan="3">Haswell</th>
+      <th colspan="3">Skylake</th>
+    </tr>
+    <tr>
+      <th colspan="1">KeyGen</th>
+      <th colspan="1">Sign</th>
+      <th colspan="1">Verify</th>
+      <th colspan="1">KeyGen</th>
+      <th colspan="1">Sign</th>
+      <th colspan="1">Verify</th>
+    </tr>
+    <tr>
+      <td rowspan="3">uov-Ip</td>
+      <td style="font-weight: bold">classic</td>
+      <td>3,311,188</td>
+      <td rowspan="2">116,624</td>
+      <td>82,668</td>
+      <td>2,903,434</td>
+      <td rowspan="2">105,324</td>
+      <td>90,336</td>
+    </tr>
+    <tr>
+      <td>pkc</td>
+      <td>3,393,872</td>
+      <td rowspan="2">311,720</td>
+      <td>2,858,724</td>
+      <td rowspan="2">224,006</td>
+    </tr>
+    <tr>
+      <td>pkc+skc</td>
+      <td>3,287,336</td>
+      <td>2,251,440</td>
+      <td>2,848,774</td>
+      <td>1,876,442</td>
+    </tr>
+    <tr>
+      <td rowspan="3">uov-Is</td>
+      <td style="font-weight: bold">classic</td>
+      <td>4,945,376</td>
+      <td rowspan="2">123,376</td>
+      <td>60,382</td>
+      <td>4,332,050</td>
+      <td rowspan="2">109,314</td>
+      <td>58,274</td>
+    </tr>
+    <tr>
+      <td>pkc</td>
+      <td>5,002,756</td>
+      <td rowspan="2">398,596</td>
+      <td>4,376,338</td>
+      <td rowspan="2">276,520</td>
+    </tr>
+    <tr>
+      <td>pkc+skc</td>
+      <td>5,448,272</td>
+      <td>3,042,756</td>
+      <td>4,450,838</td>
+      <td>2,473,254</td>
+    </tr>
+    <tr>
+      <td rowspan="3">uov-III</td>
+      <td style="font-weight: bold">classic</td>
+      <td>22,046,680</td>
+      <td rowspan="2">346,424</td>
+      <td>275,216</td>
+      <td>17,603,360</td>
+      <td rowspan="2">299,316</td>
+      <td>241,588</td>
+    </tr>
+    <tr>
+      <td>pkc</td>
+      <td>22,389,144</td>
+      <td rowspan="2">1,280,160</td>
+      <td>17,534,058</td>
+      <td rowspan="2">917,402</td>
+    </tr>
+    <tr>
+      <td>pkc+skc</td>
+      <td>21,779,704</td>
+      <td>11,381,092</td>
+      <td>17,157,802</td>
+      <td>9,965,110</td>
+    </tr>
+    <tr>
+      <td rowspan="3">uov-V</td>
+      <td style="font-weight: bold">classic</td>
+      <td>58,162,124</td>
+      <td rowspan="2">690,752</td>
+      <td>514,100</td>
+      <td>48,480,444</td>
+      <td rowspan="2">591,812</td>
+      <td>470,886</td>
+    </tr>
+    <tr>
+      <td>pkc</td>
+      <td>57,315,504</td>
+      <td rowspan="2">2,842,416</td>
+      <td>46,656,796</td>
+      <td rowspan="2">2,032,992</td>
+    </tr>
+    <tr>
+      <td>pkc+skc</td>
+      <td>57,306,980</td>
+      <td>26,021,784</td>
+      <td>45,492,216</td>
+      <td>22,992,816</td>
+    </tr>
+    <tr>
+      <th colspan="2">Dilithium 2 †</th>
+      <th>97,621*</th>
+      <th>281,078*</th>
+      <th>108,711*</th>
+      <th>70,548</th>
+      <th>194,892</th>
+      <th>72,633</th>
+    </tr>
+    <tr>
+      <th colspan="2">Falcon-512</th>
+      <th>19,189,801*</th>
+      <th>792,360*</th>
+      <th>103,281*</th>
+      <th>26,604,000</th>
+      <th>948,132</th>
+      <th>81,036</th>
+    </tr>
+    <tr>
+      <th colspan="2">SPHINCS+ ‡</th>
+      <th>1,334,220</th>
+      <th>33,651,546</th>
+      <th>2,150,290</th>
+      <th>1,510,712*</th>
+      <th>50,084,397*</th>
+      <th>2,254,495*</th>
+    </tr>
+    <tr>
+      <td colspan="8">† Security level II.   ‡ Sphincs+-SHA2-128f-simple.   * Data from <a href="https://bench.cr.yp.to/">SUPERCOP</a>.                     </td>
+    </tr>
+  </table>
+</body>
+</html>
